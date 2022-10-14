@@ -1,0 +1,28 @@
+﻿<Window Style="{DynamicResource ventana}" x:Class="ClienteTcp.Views.EnviarRectanguloView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:colorpicker="clr-namespace:ColorPicker;assembly=ColorPicker"
+        xmlns:local="clr-namespace:ClienteTcp.Views"
+        xmlns:vm="clr-namespace:ClienteTcp.ViewModels"
+        mc:Ignorable="d" Name="wndPrincipal"
+        Title="" MinHeight="600" MinWidth="1000" Icon="/Assets/paint.png"
+       
+      
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <vm:RectangleViewModel></vm:RectangleViewModel>
+    </Window.DataContext>
+  
+
+    <DockPanel>
+        <DockPanel></DockPanel>
+        
+        <ContentControl x:Name="cntControl" Content="{Binding Control}">
+           
+        </ContentControl>
+      
+    </DockPanel>
+ 
+</Window>
